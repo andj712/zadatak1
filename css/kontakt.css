@@ -1,0 +1,80 @@
+.kontakt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: #c98860;
+}
+
+.sredisnjiDeo {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    background-color: #fff6b7;
+    box-shadow: 1px 15px 35px #684129;
+    font-family: 'Poppins', sans-serif;
+    color: #055a97;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.levaStrana {
+    padding: 2rem;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.info i {
+    padding: 15px;
+    margin-right: 10px;
+    color: #055a97;
+    font-size: 23px;
+    display: block;
+    width: 20%;
+    margin-left: 30%;
+}
+
+.info p {
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 300;
+    width: 50%;
+}
+
+
+.mapa {
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 844px) {
+
+    .sredisnjiDeo {
+        width: 90%;
+    }
+
+    .info i {
+        width: auto;
+        margin-left: 10%;
+    }
+
+    .info p {
+        width: auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    iframe {
+        height: 280px;
+        width: 280px;
+    }
+}

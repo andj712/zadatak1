@@ -1,0 +1,245 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 10px;
+}
+
+#meniLogo {
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+    display: block;
+}
+
+#meniLogo:hover {
+    cursor: pointer;
+}
+
+#gif {
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+}
+
+.futer {
+    width: 100%;
+    height: 18rem;
+    background-color: #fff6b7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 -8px 18px #684129);
+}
+
+.futer .leviDeo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.futer .leviDeo a {
+    margin: auto;
+    padding: 2px;
+    text-decoration: none;
+    color: #055a97;
+}
+
+.futer .leviDeo a:hover {
+    color: #5dbbff;
+    text-shadow: #055a97;
+}
+
+.futer .centralniDeo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#futerLogo {
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    display: block;
+}
+
+#futerLogo:hover {
+    cursor: pointer;
+}
+
+.futer .desniDeo {
+    width: 30%;
+}
+
+.infoFuter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoFuter p {
+    text-align: center;
+}
+
+/*DUGME ZA VRACANJE NA VRH STRANE*/
+#back-to-the-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    height: 55px;
+    background-color: #055a97;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid black;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+
+    z-index: 100;
+}
+
+#back-to-the-top:hover,
+#back-to-the-top:focus {
+    background-color: #3990ce;
+    border: 3px solid black;
+}
+
+/* HAMBURGER MENI */
+
+.toggle-button {
+    visibility: hidden;
+}
+
+.zaglavlje-logo {
+    background-color: #fff6b7;
+    flex-direction: row;
+    display: flex;
+
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #c9f9fa;
+    cursor: pointer;
+}
+
+.meni_bar {
+    background-color: #055a97;
+    text-align: center;
+    margin: auto;
+}
+
+.meni_bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: black;
+    margin: 0;
+}
+
+.meni_bar ul li {
+    width: 170px;
+    margin: 15px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.meni_bar ul li a:hover {
+    color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* RESPONZIVNOST  */
+
+@media only screen and (max-width: 844px) {
+
+    /* za futer */
+
+    .futer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .futer .leviDeo {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .futer .centralniDeo {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .futer .desniDeo {
+        width: 95%;
+        padding: 5px;
+    }
+
+    #futerLogo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    /* za hamburger menu*/
+
+    .zaglavlje-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        filter: drop-shadow(0 10px 10px #684129);
+    }
+
+    .toggle-button {
+        visibility: visible;
+        display: flex;
+    }
+
+    .meni_bar {
+        display: none;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .meni_bar ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .meni_bar li {
+        text-align: center;
+    }
+
+    .meni_bar li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .meni_bar.active {
+        display: flex;
+    }
+
+}

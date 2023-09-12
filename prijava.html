@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upoznajte Bahame!</title>
+    <link rel="icon" href="img/palma-01.png">
+
+    <link rel="stylesheet" href="css/zaSve.css">
+    <link rel="stylesheet" href="css/prijava.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/9c51ad700d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- dugme za vracanje na pocetak stranice -->
+    <button id="back-to-the-top">
+        <img src="img/backToTop.png" alt="BackToTop" class="back-to-top" />
+    </button>
+
+    <!-- MENI -->
+    <header class="header">
+        <div class="zaglavlje-logo">
+          <a href="index.html" class="logo">
+            <img id="meniLogo" src="img/logozuti.png" alt="Logo" class="slikaHeader" />
+          </a>
+          <a href="#" class="toggle-button">
+            <img src="img/meni" alt="meni" height="80px" width="80px">
+          </a>
+        </div>
+        <!-- hamburger menu -->
+  
+        <div class="meni_bar">
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="zanimljivosti.html">Zanimljivosti</a></li>
+            <li><a href="oNama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="prijava.html">Prijava</a></li>
+          </ul>
+        </div>
+      </header>
+
+    <!-- GLAVNI DEO -->
+    <section class="drugiDeo">
+
+        <div class="prijava">
+            
+            <h2>Pošaljite nam poruku i putujte sa nama!</h2>
+
+            <form id="form" class="forma" action="">
+                
+                <div class="deoForme">
+                    <label for="ime" class="label">Ime:</label>
+                    <input class="unos" type="text" id="ime" placeholder="Unesite Vaše ime..." >
+                </div>
+
+                <div class="deoForme">
+                    <label for="prezime" >Prezime:</label>
+                    <input class="unos" type="text" id="prezime" placeholder="Unesite Vaše prezime...">
+                </div>
+
+                <div class="deoForme">
+                    <label for="email">E-mail:</label>
+                    <input class="unos" type="email" id="email" placeholder="Unesite Vašu e-mail adresu...">
+                </div>
+
+                <div class="deoForme">
+                    <label for="prtljag" >Vrsta prtljaga:</label>
+                    <div class="unos">
+                        <input id="prtljag" type="radio" name="prtljag"> Ručni prtljag 
+                        <input id="prtljag" type="radio" name="prtljag"> Kofer
+                    </div>
+                    
+                </div>
+
+                <div class="deoForme">
+                    <label for="soba">Izaberite sobu:</label>
+
+                    <select class="unos" name="soba" id="soba">
+                        <option value="jednokrevetna">jednokrevetna</option>
+                        <option value="dvokrevetna">dvokrevetna</option>
+                        <option value="trokrevetna">trokrevetna</option>
+                        <option value="cetvorokrevetna">četvorokrevetna</option>
+                    </select>   
+                </div>
+
+                <div class="deoForme">
+                    <label for="datum" >Datum polaska:</label>
+                    <input class="unos" type="date" name="datum" id="datum"> 
+                </div>
+
+                <div class="deoForme">
+                    <label for="poruka" >Poruka:</label>
+                    <textarea class="unos" name="poruka" class="poruka" id="poruka" cols="10" rows="6" placeholder="Unesite poruku..."></textarea>
+                </div>
+                
+                <div class="dugmici">
+                    <div>
+                        <div class="btn-contain">
+                            <button type="submit" class="btn dugme">Pošalji</button>
+                            <div class="btn-particles"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="btn-contain">
+                            <button type="reset" class="btn dugme">Resetuj</button>
+                            <div class="btn-particles"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+
+            <img src="img/mapa.png" alt="Mapa sveta" id="svet">
+        </div>
+
+    <!-- FUTER -->
+    <footer class="futer">
+        <div class="leviDeo">
+            <a href="zanimljivosti.html">Zanimljivosti</a>
+            <a href="oNama.html">O nama</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="prijava.html">Prijava</a>
+        </div>
+
+        <div class="centralniDeo">
+            <a href="index.html"><img id="futerLogo" src="img/logozuti.png" alt="BahamiLogo"></a> 
+            <p>© 2022 Elektronsko poslovanje - domaći zadatak 2 <br>💙KAS💙</p>
+        </div>
+
+        <div class="desniDeo">
+            <div class="infoFuter">
+                <i class="fa-solid fa-phone"></i>
+                <p>+ 381  60 123 4567
+                    <br>+ 381 60 765 4321</p>
+            </div>
+            <div class="infoFuter">
+                <i class="fas fa-envelope"></i>
+                <p>office@bahami.rs
+                <br>hr@bahami.rs</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/prijava.js"></script>
+</body>
+
+</html>
